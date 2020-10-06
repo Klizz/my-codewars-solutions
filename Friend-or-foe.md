@@ -9,7 +9,7 @@ Note: keep the original order of the names in the output.
 
 
 ## MY SOLUTION
-`
+```
 function friend(friends){
   array = [];
   for(var i=0; i<friends.length; i++){
@@ -18,4 +18,4 @@ function friend(friends){
   }
   return array
 }
-`
+```
