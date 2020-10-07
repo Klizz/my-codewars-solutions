@@ -8,7 +8,7 @@ friend `["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]`
 Note: keep the original order of the names in the output.
 
 
-## MY SOLUTION
+## MY SOLUTION IN JAVASCRIPT
 ```
 function friend(friends){
   array = [];

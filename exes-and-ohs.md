@@ -10,7 +10,7 @@ XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 XO("zzoo") => false
 ```
 
-## SOLUTION
+## MY SOLUTION IN JAVASCRIPT
 ```
 function XO(str) {
     // make the string lowercase because we are case insensitive
