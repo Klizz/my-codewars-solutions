@@ -1,13 +1,24 @@
 console.log("Testing file");
 
-function addBinary(a, b) {
-    var sum = a + b,
-      binary = "";
-    while (sum > 0) {
-      binary = (sum % 2) + binary;
-      sum = Math.floor(sum / 2);
+function duplicateEncodeB(word){
+    var string = "";
+    var obj = {};
+    var lowerCaseWord = word.toLowerCase();
+    for (var i = 0; i < lowerCaseWord.length; i++) {
+      if (obj.hasOwnProperty(lowerCaseWord[i])) {
+        obj[lowerCaseWord[i]]++;
+      } else {
+        obj[lowerCaseWord[i]] = 1;
+      }
     }
-    return binary;
+    for (var j = 0; j < lowerCaseWord.length; j++) {
+      if (obj[lowerCaseWord[j]] > 1) {
+        string += ")";
+      } else {
+        string += "(";
+      }
+    }
+    return string;
   }
 
-console.log(addBinary(2,1))
+console.log(duplicateEncodeB("recede"))
