@@ -3,6 +3,16 @@ An isogram is a word that has no repeating letters, consecutive or non-consecuti
 
 ## MY SOLUTION IN JAVASCRIPT
 ```
-let isIsogram = (str) => 
-str.split("").every((c, i) => str.indexOf(c) == i);
+function isIsogram(str){
+  var arr = str.toLowerCase().split("");
+  var inArr = []
+  for(var i =0; i<arr.length; i++){
+   if(!inArr[arr[i]]){
+   	inArr[arr[i]] = arr[i];
+   }else{
+   	return false;
+   }
+  }
+  return true;
+}
 ```
